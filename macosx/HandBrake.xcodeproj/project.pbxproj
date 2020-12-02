@@ -2014,8 +2014,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				A91CE2EF1C7DB40D0068F46F /* PBXTargetDependency */,
 				A9442D2924DAC097005EDF62 /* PBXTargetDependency */,
+				A91CE2EF1C7DB40D0068F46F /* PBXTargetDependency */,
 				A9442D2B24DAC097005EDF62 /* PBXTargetDependency */,
 				A9442D2D24DAC097005EDF62 /* PBXTargetDependency */,
 				A9442D2F24DAC097005EDF62 /* PBXTargetDependency */,
