@@ -1,0 +1,28 @@
+Update submodule:
+---------------------
+git submodule update --init --recursive 
+
+Build for Command Line:
+---------------------
+ARM64:
+./configure # check tools
+./configure --arch arm64 --enable-x265 --force --optimize speed --df-jobs 16 --df-verbose   --enable-fdk-aac --enable-ffmpeg-aac --launch-jobs 8 --disable-xcode
+cd build
+make
+make install # --> /usr/local/bin/HandBrakeCLI
+
+x86_64:
+./configure --arch x86_64 --enable-x265 --force --optimize speed --df-jobs 16 --df-verbose   --enable-fdk-aac --enable-ffmpeg-aac --launch-jobs 8 --disable-xcode
+cd build
+make
+make install # --> /usr/local/bin/HandBrakeCLI
+
+Build for macos GUI:
+---------------------
+./configure --arch arm64 --enable-x265 --force --optimize speed --enable-fdk-aac --enable-ffmpeg-aac
+
+./configure --arch x86_64 --enable-x265 --force --optimize speed --enable-fdk-aac --enable-ffmpeg-aac
+
+alternative : open xcode project to build
+
+
